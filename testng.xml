@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="methods" verbose="2" thread-count="3">
 <!--    <listeners>-->
-<!--        <listener class-name="com.selenium.interviewquestion.Transformer"/>-->
+<!--        <listener class-name="com.selenium.interviewQuestion.Transformer"/>-->
 <!--    </listeners>-->
     <listeners>
         <listener class-name="com.selenium.testNg.ListenersTest"/>
@@ -13,18 +13,47 @@
 <!--                <include name="sites"/>-->
 <!--            </run>-->
 <!--        </groups>-->
-        <parameter name="Name" value="Harry Potter"/>
+<!--        <parameter name="Name" value="Harry Potter"/>-->
+<!--        <parameter name="username" value="manojkumardev27@gmail.com"/>-->
+<!--        <parameter name="password" value="Godhand27"/>-->
         <classes>
-<!--            <class name="com.selenium.interviewquestion.TestCase">-->
+<!--            <class name="com.selenium.interviewQuestion.TestCase">-->
 <!--                <methods>-->
 <!--                    <include name="testcase1"/>-->
 <!--                    <include name="testCase2"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="com.selenium.testNg.SuiteExample"/>
+<!--            <class name="com.selenium.testNg.SuiteExample"/>-->
 <!--            <class name="com.selenium.testNg.GroupingExample"/>-->
 <!--            <class name="com.selenium.testNg.ParameterizationTest"/>-->
 <!--            <class name="com.selenium.testNg.ParallelTesting"/>-->
+<!--            <class name="com.selenium.dataDriven.loginTestCases.BothCorrect"/>-->
+<!--            <class name="com.selenium.dataDriven.dataProvider.LoginWithDataProvider"/>-->
+<!--            <class name="com.selenium.dataDriven.dataProvider.LoginWithDataProviderJXL"/>-->
+            <class name="com.selenium.dataDriven.dataProvider.LoginWithDataProviderPOI"/>
         </classes>
     </test>
+<!--    <test name="Both Incorrect">-->
+<!--        <parameter name="username" value="manojkumar27@gmail.com"/>-->
+<!--        <parameter name="password" value="Godhand"/>-->
+<!--        <classes>-->
+<!--            <class name="com.selenium.dataDriven.loginTestCases.BothIncorrect"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="UserName Incorrect">-->
+<!--        <parameter name="username" value="manojkumar27@gmail.com"/>-->
+<!--        <parameter name="password" value="Godhand27"/>-->
+<!--        <classes>-->
+<!--            <class name="com.selenium.dataDriven.loginTestCases.UserNameIncorrect"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Password Incorrect">-->
+<!--        <parameter name="username" value="manojkumardev27@gmail.com"/>-->
+<!--        <parameter name="password" value="Godhand"/>-->
+<!--        <classes>-->
+<!--            <class name="com.selenium.dataDriven.loginTestCases.PasswordIncorrect"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
