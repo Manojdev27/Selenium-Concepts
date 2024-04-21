@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <listeners>
-        <listener class-name="com.selenium.interviewquestion.Transformer"/>
-    </listeners>
+<suite name="All Test Suite" parallel="methods" verbose="2" thread-count="3">
+<!--    <listeners>-->
+<!--        <listener class-name="com.selenium.interviewquestion.Transformer"/>-->
+<!--    </listeners>-->
     <test verbose="2" preserve-order="true" name="D:/Selenium Projects/SeleniumInterviewQuestions">
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="sites"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <parameter name="Name" value="Harry Potter"/>
         <classes>
-            <class name="com.selenium.interviewquestion.TestCase">
-                <methods>
-                    <include name="testcase1"/>
-                    <include name="testCase2"/>
-                </methods>
-            </class>
+<!--            <class name="com.selenium.interviewquestion.TestCase">-->
+<!--                <methods>-->
+<!--                    <include name="testcase1"/>-->
+<!--                    <include name="testCase2"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="com.selenium.testNg.SuiteExample"/>
+            <class name="com.selenium.testNg.GroupingExample"/>
+            <class name="com.selenium.testNg.ParameterizationTest"/>
+            <class name="com.selenium.testNg.ParallelTesting"/>
         </classes>
     </test>
 </suite>
