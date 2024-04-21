@@ -4,6 +4,9 @@
 <!--    <listeners>-->
 <!--        <listener class-name="com.selenium.interviewquestion.Transformer"/>-->
 <!--    </listeners>-->
+    <listeners>
+        <listener class-name="com.selenium.testNg.ListenersTest"/>
+    </listeners>
     <test verbose="2" preserve-order="true" name="D:/Selenium Projects/SeleniumInterviewQuestions">
 <!--        <groups>-->
 <!--            <run>-->
@@ -19,9 +22,9 @@
 <!--                </methods>-->
 <!--            </class>-->
             <class name="com.selenium.testNg.SuiteExample"/>
-            <class name="com.selenium.testNg.GroupingExample"/>
-            <class name="com.selenium.testNg.ParameterizationTest"/>
-            <class name="com.selenium.testNg.ParallelTesting"/>
+<!--            <class name="com.selenium.testNg.GroupingExample"/>-->
+<!--            <class name="com.selenium.testNg.ParameterizationTest"/>-->
+<!--            <class name="com.selenium.testNg.ParallelTesting"/>-->
         </classes>
     </test>
 </suite>
